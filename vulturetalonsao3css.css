@@ -1,0 +1,1105 @@
+/*
+  AO3-INSPIRED LIODEN CSS
+
+  CREDITS
+  Base template: Vulturetalon (#243408)
+  Theme inspiration and texture asset: Archive of Our Own (AO3)
+  Libre Baskerville fallback font: Google Fonts
+
+  RULES
+  1. Keep the base-template credit when editing or sharing this stylesheet.
+  2. Do not repost this template or claim the base code as your own.
+  3. Personal edits are welcome; ask #243408 before redistributing my original work.
+  4. This theme is unofficial and is not affiliated with or endorsed by Lioden or AO3.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+:root {
+    --ao3-red: #990000;
+    --ao3-red-dark: #700000;
+    --ao3-link: #900000;
+    --ao3-link-visited: #600000;
+    --ao3-bg: #eeeeee;
+    --ao3-panel: #ffffff;
+    --ao3-panel-soft: #f7f7f7;
+    --ao3-border: #cccccc;
+    --ao3-text: #111111;
+    --ao3-muted: #555555;
+    --ao3-header-text: #ffffff;
+    --ao3-header-image: url('https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png');
+
+    --headerimg: var(--ao3-header-image);
+    --pagedoll: url('https://i.ibb.co/RkjjgTVk/Untitled79-20260214171734.png');
+    --ao3-heading-font: Georgia, 'Libre Baskerville', 'Times New Roman', serif;
+    --ao3-body-font: 'Lucida Serif', 'Lucida Bright', 'Libre Baskerville', Georgia, serif;
+}
+
+body {
+    background: var(--ao3-bg) !important;
+    background-image: none !important;
+    background-attachment: fixed;
+    color: var(--ao3-text) !important;
+    font-family: var(--ao3-body-font) !important;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#fraProfileContent,
+.container,
+.container.main,
+.col-md-9,
+.col-md-3,
+.row {
+    color: var(--ao3-text);
+}
+
+a:link,
+a:visited,
+a:active {
+    color: var(--ao3-link) !important;
+    font-family: var(--ao3-body-font) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 0.08em;
+    transition: color .2s ease-in-out;
+}
+
+a:hover {
+    color: var(--ao3-red-dark) !important;
+    text-decoration: underline !important;
+}
+
+.container.main {
+    background: var(--ao3-bg) !important;
+    border: none !important;
+    border-top: 1px solid var(--ao3-border);
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.col-md-9 {
+    background: var(--ao3-panel) !important;
+    background-image: none !important;
+    border: 1px solid var(--ao3-border);
+    border-top: none;
+    box-shadow: none !important;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.col-md-3 {
+    color: var(--ao3-text) !important;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: var(--ao3-bg) !important;
+        background-image: none !important;
+    }
+
+    .container.main,
+    .col-md-9 {
+        background: var(--ao3-panel) !important;
+    }
+
+    .col-md-9 {
+        padding: 15px 10px 25px;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .container.main {
+        background: var(--ao3-bg) !important;
+    }
+}
+
+/* BY #243408 - Vulturetalon */
+.topbar {
+    background-color: var(--ao3-red) !important;
+    background-image: var(--ao3-header-image) !important;
+    background-repeat: repeat !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: var(--ao3-header-text) !important;
+}
+
+.topbar a:link,
+.topbar a:visited,
+.topbar a:active {
+    color: #ffffff !important;
+    font-family: var(--ao3-body-font) !important;
+    text-decoration: underline !important;
+}
+
+.topbar a:hover {
+    color: #ffe4e4 !important;
+}
+
+.navbar {
+    background-color: var(--ao3-red) !important;
+    background-image: var(--ao3-header-image) !important;
+    background-repeat: repeat !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.navbar li a,
+.navbar-default .navbar-nav > li > a {
+    background: transparent !important;
+    color: #ffffff !important;
+    font-family: var(--ao3-body-font) !important;
+    font-size: 15px !important;
+    text-decoration: none !important;
+    border-radius: 0 !important;
+}
+
+.navbar li a:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    background: var(--ao3-red-dark) !important;
+    color: #ffffff !important;
+    text-decoration: underline !important;
+    border-radius: 0 !important;
+}
+
+button.navbar-toggle,
+button.navbar-toggle:hover {
+    background-color: var(--ao3-red) !important;
+    background-image: var(--ao3-header-image) !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+}
+
+div#bs-example-navbar-collapse-1.navbar-collapse.collapse.in,
+div#bs-example-navbar-collapse-1.navbar-collapse.collapsing,
+.navbar-collapse.collapsing {
+    border: none !important;
+}
+
+.breadcrumb {
+    background: #e5e5e5 !important;
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+    color: var(--ao3-text) !important;
+}
+
+.breadcrumb .active {
+    color: var(--ao3-text) !important;
+    font-family: var(--ao3-body-font) !important;
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited {
+    color: var(--ao3-link) !important;
+    font-family: var(--ao3-body-font) !important;
+    text-decoration: underline !important;
+}
+
+}
+
+h1,
+h2,
+h3,
+.sidebar h3,
+.feature h3,
+div.left h3 {
+    color: var(--ao3-red) !important;
+    font-family: var(--ao3-heading-font) !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: none !important;
+    text-decoration: none !important;
+    padding-bottom: 35px !important;
+    color: #990000;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px !important;
+}
+
+.sidebar h3 {
+    font-size: 22px !important;
+}
+
+.feature h3,
+div.left h3 {
+    font-size: 20px !important;
+}
+
+.animatedtext {
+    color: var(--ao3-red) !important;
+    font-family: var(--ao3-heading-font) !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 8s steps(300, end) infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Vulturetalon · #243408 */
+.table {
+    background: var(--ao3-panel) !important;
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+    border-collapse: separate;
+    color: var(--ao3-text) !important;
+    margin-right: 10px;
+}
+
+.table a:link,
+.table a:visited,
+.table a:active {
+    color: var(--ao3-link) !important;
+    font-family: var(--ao3-body-font) !important;
+    text-decoration: underline !important;
+    line-height: 1.5;
+}
+
+.table a:hover {
+    color: var(--ao3-red-dark) !important;
+    font-family: var(--ao3-body-font) !important;
+    text-decoration: underline !important;
+}
+
+.top,
+.bottom,
+th {
+    background-color: var(--ao3-red) !important;
+    background-image: var(--ao3-header-image) !important;
+    background-repeat: repeat !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+    font-family: var(--ao3-heading-font) !important;
+        box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.35), 1px 1px 3px -1px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.85);
+}
+
+.top a:link,
+.top a:visited,
+.top a:active,
+.bottom a:link,
+.bottom a:visited,
+.bottom a:active,
+th a:link,
+th a:visited,
+th a:active {
+    color: #ffffff !important;
+    font-family: var(--ao3-body-font) !important;
+    font-size: inherit !important;
+    font-weight: normal !important;
+    text-decoration: underline !important;
+}
+
+.top a:hover,
+.bottom a:hover,
+th a:hover {
+    color: #ffe0e0 !important;
+    font-family: var(--ao3-body-font) !important;
+    text-decoration: underline !important;
+}
+
+.table .left {
+    background: #f2f2f2 !important;
+    color: var(--ao3-text) !important;
+}
+
+/* BY #243408 — Vulturetalon */
+.inner-table {
+    background: #ffffff !important;
+    border-color: var(--ao3-border) !important;
+    color: #111111 !important;
+}
+
+.inner-table .left {
+    background: #eeeeee !important;
+    color: #111111 !important;
+    font-family: var(--ao3-body-font) !important;
+    line-height: 1.5;
+    background-image: linear-gradient(#fff 2%, #ddd 95%, #bbb 100%) !important;
+    border-radius: 0.25em !important;
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #aaa;
+}
+
+.inner-table .right {
+    background: #ffffff !important;
+    color: #111111 !important;
+    border-radius: 0 !important;
+    font-family: var(--ao3-body-font) !important;
+    line-height: 1.5;
+}
+
+.inner-table a:link,
+.inner-table a:visited,
+.inner-table a:active,
+.table .inner-table a:link,
+.table .inner-table a:visited,
+.table .inner-table a:active {
+    color: #111111 !important;
+    font-family: var(--ao3-body-font) !important;
+    font-size: inherit !important;
+    font-weight: normal !important;
+    line-height: 1.5 !important;
+    text-decoration: none !important;
+    padding: 0 !important;
+    border-bottom: 1px dotted #111111 !important;
+}
+
+.inner-table a:hover,
+.table .inner-table a:hover {
+    color: var(--ao3-red) !important;
+    font-family: var(--ao3-body-font) !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid #111111 !important;
+}
+
+.right_odd {
+    background: #f7f7f7 !important;
+}
+
+td.right,
+td.right_odd {
+    border-radius: 0 !important;
+}
+
+div.member-online {
+    background: #a1d986 !important;
+    color: #244b22 !important;
+}
+
+div.member-offline {
+    background: #a87777 !important;
+    color: #702222 !important;
+}
+
+input.floatright,
+input.floatright:hover {
+    background: #eeeeee !important;
+    color: #444444 !important;
+    width: auto;
+    font-family: var(--ao3-body-font) !important;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 1.286;
+    height: 1.286em;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    white-space: nowrap;
+    overflow: visible;
+    position: relative;
+    text-decoration: none !important;
+    border: 1px solid #bbbbbb !important;
+    border-bottom: 1px solid #aaaaaa !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+input.floatright:hover {
+    background: #e2e2e2 !important;
+    color: #222222 !important;
+}
+
+button.button,
+button.button:hover,
+button.button.bad,
+button.button.bad:hover,
+input[type="submit"],
+input[type="submit"]:hover,
+button,
+.btn {
+    background: #eeeeee !important;
+    color: #444444 !important;
+    border: 1px solid #bbbbbb !important;
+    border-bottom: 1px solid #aaaaaa !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-family: var(--ao3-body-font) !important;
+}
+
+button.button:hover,
+button.button.bad:hover,
+input[type="submit"]:hover,
+button:hover,
+.btn:hover {
+    background: #e2e2e2 !important;
+    color: var(--ao3-red) !important;
+}
+
+.alert,
+.alert-warning {
+    background: #f5f5f5 !important;
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+    color: var(--ao3-text) !important;
+}
+
+/* #243408 / Vulturetalon */
+.alert-danger {
+    background: #fece3f !important;
+    border-color: #edb202 !important;
+    color: #333333 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 0 !important;
+}
+
+.panel {
+    background: #ffffff !important;
+    color: var(--ao3-text) !important;
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.progress {
+    background: #dddddd !important;
+    color: #333333 !important;
+    border: 1px solid #cccccc;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.progress-bar,
+.progress-bar-warning,
+.progress-bar-danger,
+.progress-bar-success {
+    background: var(--ao3-red) !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.progress div {
+    color: #222222 !important;
+    font-family: var(--ao3-body-font) !important;
+}
+
+#chatMessageContainer,
+div#chatMessageContainer {
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+}
+
+.s-chat-message:nth-child(even) {
+    background: #f2f2f2 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #222222 !important;
+}
+
+.s-chat-message:nth-child(odd) {
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #222222 !important;
+}
+
+.s-chat-message__pinned {
+    background: #fff4cc !important;
+    color: #333333 !important;
+    border: 1px solid #edb202 !important;
+    border-radius: 0 !important;
+}
+
+.s-chat-message_timestamp {
+    color: #666666 !important;
+}
+
+button#label_currentChannel {
+    background: #eeeeee !important;
+    color: var(--ao3-red) !important;
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+    background-color: #fff2c7 !important;
+    border-left: 6px solid #edb202 !important;
+}
+
+#btnChatSettings,
+#btnLoadNewMessages,
+.s-chat-message_menu {
+    filter: grayscale(1);
+}
+
+#txtChatContainer #lblCharacterCounter {
+    color: #666666;
+    font-size: 12px;
+    font-style: italic;
+    position: absolute;
+    right: 4px;
+    top: -20px;
+}
+
+div#commentBox,
+div#makeComment,
+div#commentErrors {
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    color: var(--ao3-text) !important;
+    border: 1px solid var(--ao3-border) !important;
+}
+
+img.floatleft.commentTag.clear {
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+div.comment:nth-child(even) {
+    background: #f5f5f5 !important;
+    color: #222222 !important;
+    border-bottom: 1px solid #dddddd !important;
+}
+
+div.comment:nth-child(odd) {
+    background: #ffffff !important;
+    color: #222222 !important;
+    border-bottom: 1px solid #dddddd !important;
+}
+
+input#comment,
+input#postComment,
+div#commentErrors {
+    background: #f7f7f7 !important;
+    color: #222222 !important;
+    border: 1px solid #bbbbbb !important;
+    border-radius: 0 !important;
+}
+
+small.text-muted {
+    color: #666666 !important;
+}
+
+/* BY #243408 - Vulturetalon */
+#commentBox::before {
+    content: "Leave a comment.";
+    background-color: var(--ao3-red);
+    background-image: var(--ao3-header-image);
+    background-repeat: repeat;
+    color: #ffffff;
+    width: 100%;
+    min-height: 40px;
+    display: block;
+    padding: 10px 8px 6px !important;
+    box-sizing: border-box;
+}
+
+.cave-grid,
+.mound-grid {
+    background: #f7f7f7 !important;
+    color: var(--ao3-text) !important;
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+}
+
+.cave-grid:hover,
+.col-md-3:not(.dynastylist) .left:hover,
+.dynastylist .left:hover,
+.mound-grid:hover {
+    transform: translate(0, -3px);
+    transition: transform .2s ease-in-out;
+}
+
+.feature,
+div.left {
+    background: #f7f7f7 !important;
+    color: var(--ao3-text) !important;
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+}
+
+.feature {
+    width: 90%;
+}
+
+.feature h3,
+div.left h3 {
+    color: var(--ao3-red) !important;
+}
+
+span.xsmall {
+    font-size: 12px;
+}
+
+.item-header {
+    background-color: var(--ao3-red) !important;
+    background-image: var(--ao3-header-image) !important;
+    background-repeat: repeat !important;
+    color: #ffffff !important;
+    border: 1px solid var(--ao3-red-dark) !important;
+    border-radius: 0 !important;
+    font-size: 12px;
+}
+
+.item {
+    background: #ffffff !important;
+    color: var(--ao3-text) !important;
+    border: 1px solid var(--ao3-border) !important;
+    border-radius: 0 !important;
+}
+
+div.slider.round {
+    background: #cccccc !important;
+}
+
+div.slider.round::before {
+    background: #ffffff !important;
+    border: 1px solid #999999;
+}
+
+input,
+select,
+textarea {
+    background: #ffffff !important;
+    border: 1px solid #bbbbbb !important;
+    border-radius: 0 !important;
+    color: #222222 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-family: var(--ao3-body-font) !important;
+}
+
+::placeholder {
+    color: #777777 !important;
+    opacity: 1;
+}
+
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+    content: url('https://static.lioden.com/img/layout/logo-full-2.png');
+    filter: none !important;
+    opacity: 1;
+}
+
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img:hover {
+    content: url('https://static.lioden.com/img/layout/logo-full-2.png');
+    filter: none !important;
+    opacity: .85;
+    transition: opacity .3s ease-in-out;
+}
+
+img[src$="iconFB.png"] {
+    filter: brightness(100%) opacity(70%);
+    transition: .5s !important;
+    height: 55px;
+    width: auto !important;
+}
+
+a[href="https://www.facebook.com/liodengame/"]:hover img,
+a[href="https://www.facebook.com/liodengame/"]:active img,
+a[href="https://www.facebook.com/liodengame/"]:focus img,
+img[src$="iconFB.png"]:hover {
+    filter: brightness(100%) opacity(90%);
+}
+
+img[src$="iconTwit.png"] {
+    filter: brightness(100%) opacity(70%);
+    transition: .5s !important;
+    height: 55px;
+    width: auto !important;
+}
+
+a[href="https://twitter.com/liodengame"]:hover img,
+a[href="https://twitter.com/liodengame"]:active img,
+a[href="https://twitter.com/liodengame"]:focus img,
+img[src$="iconTwit.png"]:hover {
+    filter: brightness(100%) opacity(90%);
+}
+
+img[src$="iconTwitch.png"] {
+    filter: brightness(100%) opacity(70%);
+    transition: .5s !important;
+    height: 55px;
+    width: auto !important;
+}
+
+a[href="https://www.twitch.tv/lioden"]:hover img,
+a[href="https://www.twitch.tv/lioden"]:active img,
+a[href="https://www.twitch.tv/lioden"]:focus img,
+img[src$="iconTwitch.png"]:hover {
+    filter: brightness(100%) opacity(90%);
+}
+
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+position: relative !important;
+background: transparent !important;
+border: none !important;
+content: url("https://archiveofourown.org/images/ao3_logos/logo_42.png") !important;
+height: auto !important;
+left: 15% !important;
+overflow: visible !important;
+top: -10px !important;
+transform: rotate(0deg) !important;
+transform-origin: center !important;
+width: 120px !important;
+z-index: 9999 !important;
+}
+
+img[src$="iconYoutube.png"] {
+    filter: brightness(100%) opacity(70%);
+    transition: .5s !important;
+    height: 55px;
+    width: auto !important;
+}
+
+a[href="https://www.youtube.com/channel/UCPvEftRk5b1Ums5z9PNa_HA"]:hover img,
+a[href="https://www.youtube.com/channel/UCPvEftRk5b1Ums5z9PNa_HA"]:active img,
+a[href="https://www.youtube.com/channel/UCPvEftRk5b1Ums5z9PNa_HA"]:focus img,
+img[src$="iconYoutube.png"]:hover {
+    filter: brightness(100%) opacity(90%);
+}
+
+img[src="//static.lioden.com/images/items/gift.png"] {
+    content: url('https://static.lioden.com/images/items/Amusement/lionskull.png') !important;
+}
+
+img.floatleft {
+    border-radius: 0 !important;
+}
+
+/* VULTURETALON | #243408 */
+.boxcontainer {
+    background: transparent;
+    height: 90px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.boxcontainerimage {
+    background: transparent;
+    height: auto;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+.box1,
+.box2 {
+    background: #ffffff;
+    width: 300px;
+    height: 120px;
+    border-radius: 0;
+    border: 1px solid var(--ao3-border);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+    padding: 8px;
+    color: var(--ao3-text);
+    text-align: center;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.box1 { float: left; margin: 0; }
+.box2 { float: left; margin-left: 20px; }
+
+.image {
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    width: 300px;
+    position: relative;
+    bottom: 290px;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: -490px;
+    pointer-events: none;
+}
+
+.box1:hover {
+    overflow: auto;
+    transition: all .2s;
+}
+
+.box1 a,
+.box2 a {
+    font-weight: 500;
+    transition: opacity .2s;
+}
+
+.box1 a:hover,
+.box2 a:hover {
+    opacity: 1;
+}
+
+#about > tbody > tr:nth-child(1) > td > div::before {
+    content: 'Avid reader,';
+    font-size: 15px;
+    font-family: var(--ao3-body-font);
+    color: #fff;
+}
+
+table#player.table td.top::after {
+    content: "Leave Kudos ♥" !important;
+    font-size: 13px;
+    font-family: var(--ao3-body-font);
+    color: #ffffff;
+}
+
+div#lion_image {
+    border-radius: 0 !important;
+    opacity: .95;
+    overflow: hidden;
+    border: 1px solid var(--ao3-border);
+    box-shadow: 0 0 8px rgb(0 0 0 / 12%);
+    transition: .5s;
+    margin-top: 16px;
+    margin-left: -20px;
+    position: relative;
+    left: 2px;
+    transform: scale(1, 1) !important;
+}
+
+div#lion_image:hover {
+    transform: scale(1.03) !important;
+    transition: .5s;
+    opacity: 1;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+table#about > tbody > tr.right {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+table#player img {
+    border-radius: 0 !important;
+    opacity: .95;
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+    margin-left: -50px;
+}
+
+@media only screen and (max-width: 1365px) and (min-width: 1200px) {
+    div#lion_image { position: relative; left: 26px; }
+}
+
+/* BY #243408 / Vulturetalon */
+.contactButton {
+    background-color: var(--ao3-red);
+    background-image: var(--ao3-header-image);
+    background-repeat: repeat;
+    color: #ffffff;
+    padding: .45em 3em .45em 1em;
+    font-family: var(--ao3-body-font);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 0;
+    border: 1px solid var(--ao3-red-dark);
+    letter-spacing: .02em;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+}
+
+div.container.footer.center.white.visible-lg.visible-md.visible-sm,
+div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
+    color: #555555 !important;
+    text-shadow: none !important;
+    border: none !important;
+    font-size: 12px;
+    font-family: var(--ao3-body-font) !important;
+}
+
+div.clear.visible-xs.visible-sm {
+    border: none !important;
+}
+
+@media screen and (max-width: 600px) {
+    div.center.footer.small.white.visible-xs {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    div.container.footer.center.white.visible-lg.visible-md.visible-sm,
+    div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+/* BY #243408 - Vulturetalon */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+    border: 2px solid #e5e5e5;
+    border-radius: 0;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+
+@media only screen and (max-width: 767px) {
+    .container.main .hidden-xs {
+        display: block !important;
+    }
+
+    .boxcontainer {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .box1,
+    .box2 {
+        width: min(100%, 300px);
+        margin: 0 auto 10px;
+    }
+
+    .container.main::after {
+        width: 180px;
+        height: 180px;
+        opacity: .8;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .container.main .hidden-xs {
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div.quote {
+        width: 790px;
+    }
+}
+
+.mound-grid {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+a[href$="create-cave.php"] > div.cave-grid {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+div.item-footer form,
+div.item-footer {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+@media screen and (min-width: 601px) {
+    div.item.center.floatleft {
+        background: #f2f2f2 !important;
+        width: 198px !important;
+    }
+}
+
+img[src$="//static.lioden.com/images/layout/icon_den_message.png"],
+img[src$="//static.lioden.com/images/layout/icon_den_gift.png"],
+img[src$="//static.lioden.com/images/layout/icon_den_trade.png"],
+img[src$="//static.lioden.com/images/layout/icon_den_wishlist.png"],
+img[src$="//static.lioden.com/images/layout/icon_den_viewtrade.png"],
+img[src$="//static.lioden.com/images/layout/icon_den_block.png"],
+img[src$="//static.lioden.com/images/layout/icon_den_friend.png"] {
+    content: url('') !important;
+    width: 0 !important;
+    display: none !important;
+}
+
+#player td.top .floatright,
+#player td.top small {
+    visibility: hidden !important;
+}
+
+* {
+    cursor: url('https://cur.cursors-4u.net/mechanics/mec-5/mec424.cur'), auto !important;
+}
+
+.table td a:link,
+.table td a:visited,
+.table td a:active,
+.table td a:hover,
+.table th:not(.top):not(.bottom) a:link,
+.table th:not(.top):not(.bottom) a:visited,
+.table th:not(.top):not(.bottom) a:active,
+.table th:not(.top):not(.bottom) a:hover,
+.inner-table a:link,
+.inner-table a:visited,
+.inner-table a:active,
+.inner-table a:hover {
+    color: #111111 !important;
+    font-family: var(--ao3-body-font) !important;
+    font-size: inherit !important;
+    font-weight: normal !important;
+    line-height: 1.5 !important;
+    text-decoration: none !important;
+    padding: 0 !important;
+    border-bottom: 1px dotted #111111 !important;
+}
+
+.table td.top a:link,
+.table td.top a:visited,
+.table td.top a:active,
+.table td.top a:hover,
+.table td.bottom a:link,
+.table td.bottom a:visited,
+.table td.bottom a:active,
+.table td.bottom a:hover,
+.table th.top a:link,
+.table th.top a:visited,
+.table th.top a:active,
+.table th.top a:hover,
+.table th.bottom a:link,
+.table th.bottom a:visited,
+.table th.bottom a:active,
+.table th.bottom a:hover,
+.table th a:link,
+.table th a:visited,
+.table th a:active,
+.table th a:hover {
+    color: #ffffff !important;
+    font-family: var(--ao3-body-font) !important;
+    font-size: inherit !important;
+    font-weight: normal !important;
+    line-height: 1.5 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #ffffff !important;
+    border-bottom: none !important;
+}
