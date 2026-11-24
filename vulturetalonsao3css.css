@@ -123,6 +123,7 @@ a:hover {
     border: none !important;
     border-radius: 0 !important;
     color: var(--ao3-header-text) !important;
+          box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.35), 1px 1px 3px -1px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.85);
 }
 
 .topbar a:link,
@@ -140,6 +141,7 @@ a:hover {
 .navbar {
     background-color: var(--ao3-red) !important;
     background-image: var(--ao3-header-image) !important;
+          box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.35), 1px 1px 3px -1px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.85);
     background-repeat: repeat !important;
     border: none !important;
     border-radius: 0 !important;
@@ -217,7 +219,7 @@ h1 {
     text-transform: none !important;
     text-decoration: none !important;
     padding-bottom: 35px !important;
-    color: #990000;
+    color: #111;
 }
 
 h2 {
@@ -602,6 +604,7 @@ small.text-muted {
     display: block;
     padding: 10px 8px 6px !important;
     box-sizing: border-box;
+          box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.35), 1px 1px 3px -1px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.85);
 }
 
 .cave-grid,
