@@ -439,7 +439,7 @@ button,
 }
 
 .breadcrumb::after {
-        content: "Free Css by #243408";
+        content: "css by #243408";
         color: #111;
         position: absolute;
         right: 14%; /* (This may need adjusting) */
