@@ -1048,10 +1048,6 @@ img[src$="//static.lioden.com/images/layout/icon_den_friend.png"] {
     visibility: hidden !important;
 }
 
-* {
-    cursor: url('https://cur.cursors-4u.net/mechanics/mec-5/mec424.cur'), auto !important;
-}
-
 .table td a:link,
 .table td a:visited,
 .table td a:active,
